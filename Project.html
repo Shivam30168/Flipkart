@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flipkart</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="flipkart.svg" alt="" id="flipkart">
+            <input type="text" placeholder="Search for Products, Brands and More" >
+            <button>Search</button>
+
+            
+            <div class="dropdown">
+                <a href="http://127.0.0.1:5500/HTML/Class%20topic/4%20-%20HTML%20Forms.html" ><i class="fa-solid fa-user"></i> Login</a>
+                <div class="dropdown-content">
+                    <a href="">My Profile</a>
+                    <a href="" id="fpz">Flipkart Plus Zone</a>
+                    <a href="">Orders</a>
+                    <a href="">Wishlist</a>
+                    <a href="">Rewards</a>
+                    <a href="">Gift Cards</a>
+                </div>
+            </div>
+            <a href=""><img src="cart.svg" alt="">Cart</a>
+            <a href=""><img src="seller.svg" alt="">Become a Seller</a>
+            <a href=""><img src="3dots.svg" alt=""></a>
+        </div>
+        <header>
+            <img src="Images/banner3.jpg" alt="" class="img1">
+            <img src="Images/banner1.jpg" alt="" class="img1">
+            <img src="Images/banner2.jpg" alt="" class="img1">
+            <img src="Images/banner3.jpg" alt="" class="img1">
+            <img src="Images/banner4.jpg" alt="" class="img1">
+            
+        </header>
+        <div class="category">
+            <div class="items">                
+                <a href="" ><img src="topoffers.webp" alt="Top Offers">Top Offers</a>
+            </div>
+            <div class="items">                
+                <a href=""><img src="mobiles.webp" alt="">Mobiles & <br> Tablets</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="Electronics.webp" alt="">Electronics</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="TVs.webp" alt="">TVs & <br> Appliances</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="Fashion.webp" alt="">Fashion</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="Beauty.webp" alt="">Beauty</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="Home.webp" alt="">Home & <br>Kitchen</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="FUrniture.webp" alt="">Furniture</a>
+            </div>
+            <div class="items">                
+                <a href=""><img src="Flights.webp" alt="">Flights</a>
+            </div>
+            <div class="items">
+                <a href=""><img src="Grocery.webp" alt="">Grocery</a>
+            </div>
+        </div>
+        
+        <div id="cartMessage"></div>
+
+        <div class="products">
+            <div class="listofproducts">
+                <a href=""><img src="Speakers.webp" alt="">
+                    Mobile Speakers <br>From Rs.599</a><br> 
+                    <button onclick="addToCart(1)" id="cart1" >Add to Cart</button> 
+                    <div class="cartMessage" id="cartMessage1"></div>
+                    <div id="box1">0</div>
+                    <button onclick=inc(1) id="inc1">+</button>                          
+                    <button onclick=dec(1) id="dec1">-</button>                
+            </div>
+            <div class="listofproducts">
+                <a href=""><img src="smartwatches.webp" alt="">
+                Best-Selling Smartwatches <br>From Rs.999</a><br> 
+                <button onclick="addToCart(2)" id="cart2">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage2"></div>
+                <div id="box2">0</div>
+                    <button onclick=inc(2) id="inc2">+</button>                          
+                    <button onclick=dec(2) id="dec2">-</button>
+            </div>
+            <div class="listofproducts">
+                <a href=""><img src="Tablets.webp" alt="">
+                Apple Best-Selling Tablets <br>From Rs.30900*</a><br> 
+                <button onclick="addToCart(3)" id="cart3">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage3"></div>
+                <div id="box3">0</div>
+                <button onclick=inc(3) id="inc3">+</button>
+                <button onclick=dec(3) id="dec3">-</button>
+            </div>
+            <div class="listofproducts">
+                <a href=""><img src="monitor.webp" alt="">
+                Top-deals on monitors <br>From Rs.599/Month*</a><br> 
+                <button onclick="addToCart(4)" id="cart4">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage4"></div>
+                <div id="box4">0</div>
+                <button onclick=inc(4) id="inc4">+</button>                          
+                <button onclick=dec(4) id="dec4">-</button>
+            </div>
+            <div class="listofproducts">
+                <a href=""><img src="Gaming.webp" alt="">
+                Top-deals on gaming <br>From Rs.7899</a><br> 
+                <button onclick="addToCart(5)" id="cart5">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage5"></div>
+                <div id="box5">0</div>
+                <button onclick=inc(5) id="inc5">+</button>
+                <button onclick=dec(5) id="dec5">-</button>
+            </div>   
+            <div class="listofproducts">
+                <a href=""><img src="helmet.webp" alt="">
+                Rider helmet <br>From Rs.699</a><br> 
+                <button onclick="addToCart(6)" id="cart6">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage6"></div>
+                <div id="box6">0</div>
+                <button onclick=inc(6) id="inc6">+</button>
+                <button onclick=dec(6) id="dec6">-</button>
+            </div>    
+            <div class="listofproducts">
+                <a href=""><img src="cycle.webp" alt="">
+                Geared cycle <br>Upto 70% off</a><br> 
+                <button onclick="addToCart(7)" id="cart7">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage7"></div>
+                <div id="box7">0</div>
+                <button onclick=inc(7) id="inc7">+</button>
+                <button onclick=dec(7) id="dec7">-</button>
+            </div>   
+            <div class="listofproducts">
+                <a href=""><img src="cars and toys.webp" alt="">
+                Remote Control Toys <br>Upto 80% off</a><br> 
+                <button onclick="addToCart(8)" id="cart8">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage8"></div>
+                <div id="box8">0</div>
+                <button onclick=inc(8) id="inc8">+</button>
+                <button onclick=dec(8) id="dec8">-</button>
+            </div> 
+            <div class="listofproducts">
+                <a href=""><img src="musical keyboard.webp" alt="">
+                Musical Keyboard <br>Upto 70% off</a><br> 
+                <button onclick="addToCart(9)" id="cart9">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage9"></div>
+                <div id="box9">0</div>
+                <button onclick=inc(9) id="inc9">+</button>
+                <button onclick=dec(9) id="dec9">-</button>
+            </div> 
+            <div class="listofproducts">
+                <a href=""><img src="dry fruits.webp" alt="">
+                Dry Fruits<br>Upto 75% off</a><br> 
+                <button onclick="addToCart(10)" id="cart10">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage10"></div>
+                <div id="box10">0</div>
+                <button onclick=inc(10) id="inc10">+</button>
+                <button onclick=dec(10) id="dec10">-</button>
+            </div> 
+            <div class="listofproducts">
+                <a href=""><img src="car lubricant.webp" alt="">
+                Car Lubricant <br>Upto 45% off</a><br> 
+                <button onclick="addToCart(11)" id="cart11">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage11"></div>
+                <div id="box11">0</div>
+                <button onclick=inc(11) id="inc11">+</button>
+                <button onclick=dec(11) id="dec11">-</button>
+            </div> 
+            <div class="listofproducts">
+                <a href=""><img src="Stationary.webp" alt="">
+                Top Selling Stationary <br>From Rs.49</a><br> 
+                <button onclick="addToCart(12)" id="cart12">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage12"></div>
+                <div id="box12">0</div>
+                <button onclick=inc(12) id="inc12">+</button>
+                <button onclick=dec(12) id="dec12">-</button>
+            </div> 
+            <div class="listofproducts">
+                <a href=""><img src="Coffee.webp" alt="">
+                Coffee Powder <br>Upto 80% off</a><br> 
+                <button onclick="addToCart(13)" id="cart13">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage13"></div>
+                <div id="box13">0</div>
+                <button onclick=inc(13) id="inc13">+</button>
+                <button onclick=dec(13) id="dec13">-</button>
+            </div> 
+            <div class="listofproducts">
+                <a href=""><img src="Yoga mat.webp" alt="">
+                Yoga Mat <br>From Rs.159</a><br> 
+                <button onclick="addToCart(14)" id="cart14">Add to Cart</button>
+                <div class="cartMessage" id="cartMessage14"></div>
+                <div id="box14">0</div>
+                <button onclick=inc(14) id="inc14">+</button>
+                <button onclick=dec(14) id="dec14">-</button>
+            </div> 
+        </div>
+
+    
+        <script src="Project.js" async defer></script>
+        <footer>
+            <p>Official Payment Partners :</p>
+            <img src="payment-method.svg" alt="">
+            <p id="fot">Developer:Shivam Tyagi<br>
+            E-mail us at: raj@gmail.com  <br>
+            Contact no.:65849393736 </p>         
+            <p>© Copyright 2018 Mobirise - All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
+
+
+
+    

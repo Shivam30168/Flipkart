@@ -1,0 +1,174 @@
+body{
+    background-color: rgb(238, 235, 235);
+}
+.img1{  
+    z-index: 0;
+    height: 260px; 
+    width: 50%; 
+    display: inline-block; 
+    animation: go 12s linear  infinite;  
+    
+}
+@keyframes go{
+    0% {
+        transform: translateX(-1000px);
+    }
+    25%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    75% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+}
+header{
+    margin-top: 70px;
+    background-size: contain;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+     
+}
+
+.navbar #flipkart:hover {
+    background-color: black;
+}
+
+.navbar img{
+    vertical-align: text-bottom;
+    margin-right: 2px;
+}
+
+.navbar a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px;   
+    padding: 7px;
+}
+input{
+    margin-left: 80px;
+    width: 350px;
+    font-size: large;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;   
+}
+.dropdown a{
+    display: inline-block;  
+    height: 1px;
+    width: 130px;
+}
+
+.dropdown-content{
+    display: none;  
+    position: absolute;
+    background-color: rgb(244, 245, 249); 
+    margin-top: 2px; 
+      
+}
+.dropdown-content a{
+    height: 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 3px 0;
+    
+}
+.dropdown:hover{
+    background-color: #224bdf;
+}
+.dropdown-content a:hover{
+    background-color: yellow;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.category{
+    background-color: white;
+    border: 3px solid white;    
+    margin: 8px;
+    
+}
+.category a{
+    color: black;
+    text-decoration: none; 
+    
+}
+.items img{
+    display: block;     
+}
+.items{
+    margin: 11px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    
+}
+.items:hover{
+    background-color: rgb(223, 181, 181);
+}
+.cartMessage{
+    color: red;
+    font-size: 20px;
+}
+.products{
+    border: 2px solid black;
+}
+.listofproducts{
+    
+    border: 2px solid white;
+    width: 200px; 
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+.listofproducts:hover{
+    background-color: rgb(174, 240, 240);
+    transform: scale(1.03,1.03);
+}
+.listofproducts button {
+    padding: 10px ;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+.listofproducts button:hover {
+    background-color: rgb(216, 241, 70); /* Darker green on hover */
+  }
+.listofproducts  img{
+    height: 200px;
+    width: 200px;      
+}
+.listofproducts a{
+    text-decoration: none;
+    color: black;    
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(241, 211, 201);
+    color: black;
+    padding: 2px;
+    
+}
+#fot{
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+
